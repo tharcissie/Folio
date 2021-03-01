@@ -62,7 +62,7 @@
 }
 p.para {
   color: var(--text-color);
-  font: normal 18px/30px var(--roboto);
+  font-size: 20px;
 }
 .navbar_fixed {
   position: fixed;
