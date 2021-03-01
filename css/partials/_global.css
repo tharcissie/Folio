@@ -29,14 +29,14 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: var(--gradient-color);
+  background: rgb(252, 122, 75);
   content: "";
   z-index: -1;
   border-radius: 4px;
 }
 
 .button.secondary-button {
-  background: var(--gradient-color);
+  background: rgb(245, 99, 46);
   background-clip: padding-box;
   color: whitesmoke;
   transition: background 0.9s ease;
