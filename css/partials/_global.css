@@ -36,18 +36,18 @@
 }
 
 .button.secondary-button {
-  background: var(--gradient-color);
+  background: orangered;
   background-clip: padding-box;
   color: whitesmoke;
   transition: background 0.9s ease;
-  box-shadow: var(--box-shadow);
+  box-shadow: gray;
   font-size: 20px;
 }
 
 .button.secondary-button:hover {
   background: whitesmoke;
   background-clip: padding-box;
-  color: black;
+  color: orangered;
 }
 .secondary-button::after {
   position: absolute;
