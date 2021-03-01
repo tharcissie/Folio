@@ -36,18 +36,18 @@
 }
 
 .button.secondary-button {
-  background: orangered;
+  background: var(--gradient-color);
   background-clip: padding-box;
   color: whitesmoke;
   transition: background 0.9s ease;
-  box-shadow: gray;
+  box-shadow: var(--box-shadow);
   font-size: 20px;
 }
 
 .button.secondary-button:hover {
   background: whitesmoke;
   background-clip: padding-box;
-  color: orangered;
+  color: black;
 }
 .secondary-button::after {
   position: absolute;
@@ -62,7 +62,7 @@
 }
 p.para {
   color: var(--text-color);
-  font-size: 20px;
+  font: normal 18px/30px var(--roboto);
 }
 .navbar_fixed {
   position: fixed;
