@@ -1,7 +1,7 @@
 /* if the viewport is equal to 340px or less than that */
 @media only screen and (max-width: 340px) {
   .header_area .main_menu .navbar,
-  .header_area .main_menu .navbar .navbar-brand,
+  .header_area .main_menu .navbar 
   .site-main .subscribe-us-area .subscribe .subscribe-title,
   .site-main .subscribe-us-area .subscribe .subscribe-title p,
   h4,
@@ -16,9 +16,6 @@
   }
   .site-main .site-banner .site-title .h3 {
     font-size: 20px;
-  }
-  .navbar-brand{
-    margin-top: -160px;
   }
 }
 

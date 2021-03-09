@@ -28,6 +28,7 @@
   <link href="css/css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <style>
   .work-img {
@@ -35,101 +36,98 @@
   }
 
   .fab {
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 50%;
     color: rgb(214, 212, 212);
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+  }
+
+  .fas {
+    font-size: 20px;
   }
 
   .fab:hover {
     color: orangered;
   }
-  .shado{
-    text-shadow: 2px 2px #070707;
-  }
-  .header_area .main_menu .navbar-nav :hover{
+
+  .header_area .main_menu .navbar-nav :hover {
     color: orangered;
   }
-  .para{
+
+  .para {
     font-size: 16px;
   }
 </style>
 
 <body>
-  <header class="header_area">
-    <div class="main_menu">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="./img/logo.png"="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mr-auto"></div>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main class="site-main">
-    <div class="profile col-12 text-center" style="background: url(img/banner.jpg);">
-      <div class=" pt-3" style="background-color:rgba(255, 151, 82, 0.5);">
-        <div class="img  d-flex justify-content-center">
-          <img src="img/tharcissie.jpeg"="tharcissie">
-        </div>
-        <h3 class="text-responsive text-white shado">Tharcissie Idufashe</h3>
-        <h5 class="text-responsive text-white shado">User Interface Designer and Full Stack Developer</h5>
-        <div class="site-buttons">
-          <div class="d-flex justify-content-center flex-row flex-wrap">
-            <a href="https://github.com/tharcissie" target="_blank"><i class="fab fa-github mr-3"></i></a>
-            <a href="https://www.linkedin.com/in/idufashe-tharcissie-19a3311ab" target="_blank"><i
-                class="fab fa-linkedin-in mr-3"></i></a>
-            <a href="https://www.facebook.com/tharcissie" target="_blank"><i class="fab fa-facebook-f mr-3"></i></a>
-            <a href="https://twitter.com/tharcissieidufa" target="_blank"><i class="fab fa-twitter mr-3"></i></a>
-            <a href="https://www.instagram.com/tharcissie_" target="_blank"><i class="fab fa-instagram mr-3"></i></a>
-
-          </div>
-        </div>
-
-        <div class=" text-white row justify-content-center p-2">
-          <div class="col-md-5 skills text-center">
-            <h4 class="text-white shado" >Skills</h4>
-            <ul>
-              <li>Python</li>
-              <li>Figma</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>ReactJs</li>
-              <li>ReactNative</li>
-              <li>Django</li>
-              <li>APIs</li>
-              <li>Angular</li>
-            </ul>
-          </div>
-        </div>
+  <nav class="navbar navbar-expand-lg text-light" style="background: rgb(182, 78, 9);">
+    <div class="container ">
+      <a class="navbar-brand text-light" href="#"><b>Port<span style="color: rgb(247, 146, 96);">folio</span></b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#home"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about"><b>About</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#work"><b>Portfolio</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact"><b>Contact</b></a>
+          </li>
+        </ul>
       </div>
     </div>
-    <section class="p-4" id="about">
+  </nav>
+  <main class="site-main">
+
+    <div class=" pt-3 "
+      style="background:linear-gradient(rgba(247, 101, 3, 0.7), rgb(31, 30, 30,.7)),url(img/backg.jpg)">
+      <div class="img  d-flex justify-content-center">
+        <img src="img/tharcissie.jpeg">
+      </div>
+      <h3 class="text-responsive pt-4 text-white text-center" data-aos="zoom-out-right" data-aos-duration="3000">
+        THARCISSIE IDUFASHE</h3>
+      <h5 class="text-responsive text-white text-center" data-aos="zoom-out-left" data-aos-duration="3000">User
+        Interface Designer and Full Stack Developer</h5>
+      <div class="site-buttons">
+        <div class="d-flex justify-content-center flex-row flex-wrap">
+          <a href="https://github.com/tharcissie" target="_blank"><i class="fab fa-github mr-3" data-aos="fade-up"
+              data-aos-duration="3000"></i></a>
+          <a href="https://www.linkedin.com/in/idufashe-tharcissie-19a3311ab" target="_blank"><i
+              class="fab fa-linkedin-in mr-3" data-aos="fade-down" data-aos-duration="3000"></i></a>
+          <a href="https://www.facebook.com/tharcissie" target="_blank"><i class="fab fa-facebook-f mr-3"
+              data-aos="fade-up" data-aos-duration="3000"></i></a>
+          <a href="https://twitter.com/tharcissieidufa" target="_blank"><i class="fab fa-twitter mr-3"
+              data-aos="fade-down" data-aos-duration="3000"></i></a>
+          <a href="https://www.instagram.com/tharcissie_" target="_blank"><i class="fab fa-instagram mr-3"
+              data-aos="fade-up" data-aos-duration="3000"></i></a>
+
+        </div>
+      </div>
+      <div class="d-flex justify-content-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+        data-aos-delay="3000" data-aos-offset="0">
+        <a href=" ./cv/my_cv.pdf " download><button class=" btn mb-5 button secondary-button">
+            Download CV
+          </button></a>
+      </div>
+    </div>
+
+    <section class="mt-5 p-5" id="about">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-lg-6 ">
             <h2 class="pt-4 pb-4">
               About Me
             </h2>
-            <div class="">
+            <div class="" data-aos="fade-left" data-aos-duration="3000">
               <p class="para">
                 My name's Tharcissie Idufashe. I'm full stack developer based in Rwanda, and I'm very passionate and
                 dedicated to my work. With 1 years experience as a professional full stack developer. I have acquired
@@ -140,13 +138,23 @@
                 and my Advanced Level at Ecole Secondaire Saint Vincent Muhoza. This year I will be a graduate from
                 University of Rwanda, Where I was parsuing Information Technology.
               </p>
+              <div class="skills p-0 text-light">
+                <ul>
+                  <li>Python</li>
+                  <li>Figma</li>
+                  <li>html/css</li>
+                  <li>JavaScript</li>
+                  <li>ReactJs</li>
+                  <li>ReactNative</li>
+                  <li>Django</li>
+                  <li>APIs</li>
+                </ul>
+              </div>
 
             </div>
-            <a href="./cv/my_cv.pdf " download><button class="btn button secondary-button">
-                Download CV
-              </button></a>
+
           </div>
-          <div class="col-sm-6 ">
+          <div class="col-sm-6 " data-aos="fade-right" data-aos-duration="3000">
             <div class="about-image d-none d-lg-block">
               <img src="./img/banner/banner-image.png"="" about class="img-fluid">
             </div>
@@ -156,7 +164,7 @@
         </div>
       </div>
     </section>
-    <section id="work" class="portfolio-mf sect-pt4 route">
+    <section id="work" data-aos="fade-up" data-aos-duration="3000" class="portfolio-mf sect-pt4 route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -186,8 +194,8 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse2"
-                        aria-expanded="true" aria-controls="collapse2"></span>
+                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
+                        aria-controls="collapse2"></span>
                     </div>
                   </div>
                   <div id="collapse2" class="collapse container" aria-labelledby="headingOne" data-parent="#accordion">
@@ -219,8 +227,8 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse1"
-                        aria-expanded="true" aria-controls="collapse1"></span>
+                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
+                        aria-controls="collapse1"></span>
                     </div>
                   </div>
                   <div id="collapse1" class="collapse container" aria-labelledby="headingOne" data-parent="#accordion">
@@ -253,8 +261,8 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne"></span>
+                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne"></span>
                     </div>
 
                   </div>
@@ -288,8 +296,8 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse3"
-                        aria-expanded="true" aria-controls="collapse3"></span>
+                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse3" aria-expanded="true"
+                        aria-controls="collapse3"></span>
                     </div>
                   </div>
                   <div id="collapse3" class="collapse container" aria-labelledby="headingOne" data-parent="#accordion">
@@ -321,8 +329,8 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse4"
-                        aria-expanded="true" aria-controls="collapse4"></span>
+                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse4" aria-expanded="true"
+                        aria-controls="collapse4"></span>
                     </div>
                   </div>
                   <div id="collapse4" class="collapse container" aria-labelledby="headingOne" data-parent="#accordion">
@@ -354,8 +362,8 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse5"
-                        aria-expanded="true" aria-controls="collapse5"></span>
+                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse5" aria-expanded="true"
+                        aria-controls="collapse5"></span>
                     </div>
                   </div>
                   <div id="collapse5" class="collapse container" aria-labelledby="headingOne" data-parent="#accordion">
@@ -386,8 +394,8 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse6"
-                        aria-expanded="true" aria-controls="collapse6"></span>
+                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse6" aria-expanded="true"
+                        aria-controls="collapse6"></span>
                     </div>
                   </div>
                   <div id="collapse6" class="collapse container" aria-labelledby="headingOne" data-parent="#accordion">
@@ -419,8 +427,8 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse7"
-                        aria-expanded="true" aria-controls="collapse7"></span>
+                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse7" aria-expanded="true"
+                        aria-controls="collapse7"></span>
                     </div>
                   </div>
                   <div id="collapse7" class="collapse container" aria-labelledby="headingOne" data-parent="#accordion">
@@ -452,8 +460,8 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse8"
-                        aria-expanded="true" aria-controls="collapse8"></span>
+                      <span class="fas fa-expand" data-toggle="collapse" data-target="#collapse8" aria-expanded="true"
+                        aria-controls="collapse8"></span>
                     </div>
                   </div>
                   <div id="collapse8" class="collapse container" aria-labelledby="headingOne" data-parent="#accordion">
@@ -471,7 +479,8 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="subscribe-us-area pt-5">
+    <section id="contact" class="subscribe-us-area pt-5" data-aos="zoom-in" data-aos-duration="3000">
+
       <div class="container subscribe">
         <div class="row">
           <div class="col-lg-12 text-center subscribe-title">
@@ -527,7 +536,7 @@
   <script src="contactform/contactform.js"></script>
   <script src="js/js/main.js"></script>
   <script src="./js/script.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -537,7 +546,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

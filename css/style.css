@@ -1,4 +1,4 @@
-@import url(./fonts.css);
+
 @import url(./partials/_variables.css);
 @import url(./partials/_global.css);
 html {
@@ -10,12 +10,7 @@ html {
 .header_area .main_menu .navbar {
   padding: 1rem 20rem;
 }
-.header_area .main_menu .nav-item .nav-link {
-  font: normal 500 15px/2px var(--roboto);
-  text-transform: uppercase;
-  padding: 1.7rem;
-  color: var(--title-color);
-}
+
 .header_area .main_menu .navbar-nav .active a {
   background: var(--gradient-color);
   -webkit-background-clip: text;
@@ -208,10 +203,5 @@ span {
 }
 .ahoo{
   color: var(--primary-color);
-}
-.navbar-brand{
-  width: 139px;
-  height: 45px;
-  margin-top: -4rem;
 }
 
